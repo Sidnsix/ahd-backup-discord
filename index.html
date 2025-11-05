@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Green Animated Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #004d00, #00ff00);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+    margin: 0;
+  }
+
+  @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+  }
+
+  .container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 100, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+    animation: slideIn 1.5s ease-out;
+  }
+
+  @keyframes slideIn {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+  }
+
+  .title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00ff00;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #00ff00, #004d00);
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+  }
+
+  .button:hover {
+    background: linear-gradient(45deg, #004d00, #00ff00);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00ff00;
+  }
+
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(0, 255, 0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(0, 255, 0, 0); }
+  }
+
+  .backup {
+    animation-delay: 0.5s;
+  }
+
+  .ads {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 50, 0, 0.9);
+    border-radius: 5px;
+    animation: fadeIn 2s ease-in-out 1s both;
+  }
+
+  .ads h2 {
+    margin-bottom: 10px;
+    color: #00ff00;
+  }
+
+  .ad-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 600px) {
+    .buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .title {
+      font-size: 2em;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1 class="title">Welcome to the ahd steam discord</h1>
+  <div class="buttons">
+    <a href="https://discord.gg/twhuSE5r" class="button" target="_blank" rel="noopener">ahd tech link discord</a>
+    <a href="https://discord.gg/EzzVcHEn" class="button backup" target="_blank" rel="noopener">ahd backup</a>
+  </div>
+  <div class="ads">
+    <h2>Ads Section</h2>
+    <p>Placeholder for advertisements. You can replace this with actual ad code or content.</p>
+    <div class="ad-placeholder">
+      <img src="https://via.placeholder.com/300x150/00FF00/000000?text=Ad+Here" alt="Ad Placeholder" />
+    </div>
+  </div>
+</div>
+</body>
+</html>
